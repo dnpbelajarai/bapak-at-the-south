@@ -29,7 +29,7 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #4A90E2 0%, #50C878 100%);
     --gradient-secondary: linear-gradient(135deg, #FFB347 0%, #E74C3C 100%);
-    --gradient-overlay: linear-gradient(135deg, rgba(74, 144, 226, 0.8) 0%, rgba(80, 200, 120, 0.8) 100%);
+    --gradient-overlay: linear-gradient(135deg, rgba(74, 144, 226, 0.3) 0%, rgba(80, 200, 120, 0.3) 100%);
     
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
