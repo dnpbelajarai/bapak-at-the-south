@@ -237,6 +237,7 @@ a:hover {
     background: var(--gradient-primary);
     overflow: hidden;
     margin-top: 70px;
+   background-position: calc(50% + 4.5cm) center !important; /* Geser background 4.5cm ke kanan */
 }
 
 .hero-overlay {
