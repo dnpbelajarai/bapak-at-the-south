@@ -557,37 +557,32 @@
     </style>
     
     <script>
-        // Contact form handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            console.log('Form submitted:', formData);
-            
-            // Show success message
-            if (window.BapakattheSouth && window.BapakattheSouth.showNotification) {
-                window.BapakattheSouth.showNotification(
-                    'Thank you! Your message has been sent successfully. 🎉',
-                    'success'
-                );
-            }
-            
-            // Reset form
+    // Contact form handling - mailto: version
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Create mailto link with form data
+        const yourEmail = 'dnpbelajarai@outlook.com'; // GANTI DENGAN EMAIL ANDA!
+        const mailtoSubject = `Contact Form: ${subject}`;
+        const mailtoBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+        
+        const mailtoLink = `mailto:${yourEmail}?subject=${encodeURIComponent(mailtoSubject)}&body=${mailtoBody}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Reset form after a short delay
+        setTimeout(() => {
             this.reset();
-            
-            // In production, send to backend:
-            // fetch('/api/contact', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify(formData)
-            // })
-        });
-    </script>
+            alert('Email client opened! Please send the email to complete your message.');
+        }, 500);
+    });
+</script>
+
 </body>
 </html>
