@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food and travel adventures from around the world. Discover culinary experiences and travel destinations.">
+    <meta name="keywords" content="food, travel, culinary, adventures, destinations, photography">
+    <meta name="author" content="Bapak at the South">
+    
+    <title>Food & Travel - Bapak at the South</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏠</span>
+                    <span class="logo-text">Bapak at the South</span>
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="technology.html" class="nav-link">Technology</a></li>
+                    <li><a href="food-travel.html" class="nav-link active">Food & Travel</a></li>
+                    <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                    <li><a href="shop.html" class="nav-link shop-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header travel-header">
+        <div class="container">
+            <h1 class="page-title fade-in">🌍 Food & Travel Journey</h1>
+            <p class="page-subtitle fade-in-delay">Exploring flavors and destinations around the world</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="food">🍜 Food</button>
+                <button class="filter-tab" data-filter="travel">✈️ Travel</button>
+                <button class="filter-tab" data-filter="culture">🎭 Culture</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- PHOTO CARD TEMPLATE - Copy this entire section to add new photo -->
+                <div class="photo-card" data-category="food" data-aos="fade-up">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🍜</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Jakarta, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Authentic Indonesian Nasi Goreng</h3>
+                        <p class="photo-date">April 30, 2026</p>
+                        <p class="photo-description">
+                            Discovered this amazing street food vendor in Jakarta. The perfect blend of spices, 
+                            fresh ingredients, and traditional cooking methods make this the best nasi goreng I've ever tasted.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Indonesian Food</span>
+                            <span class="tag">Street Food</span>
+                            <span class="tag">Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF PHOTO CARD TEMPLATE -->
+
+                <div class="photo-card" data-category="travel" data-aos="fade-up" data-aos-delay="100">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🏝️</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Bali, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Sunrise at Tanah Lot Temple</h3>
+                        <p class="photo-date">April 25, 2026</p>
+                        <p class="photo-description">
+                            Waking up at 4 AM was worth it for this breathtaking sunrise view. The ancient temple 
+                            surrounded by ocean waves creates a magical atmosphere that's truly unforgettable.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Bali</span>
+                            <span class="tag">Temple</span>
+                            <span class="tag">Sunrise</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🍕</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Naples, Italy</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Traditional Neapolitan Pizza</h3>
+                        <p class="photo-date">April 20, 2026</p>
+                        <p class="photo-description">
+                            Nothing compares to authentic pizza from Naples. The wood-fired oven, fresh mozzarella, 
+                            and simple yet perfect ingredients create a taste that defines Italian cuisine.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Italian Food</span>
+                            <span class="tag">Pizza</span>
+                            <span class="tag">Naples</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="culture" data-aos="fade-up">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🎭</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Yogyakarta, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Traditional Wayang Kulit Performance</h3>
+                        <p class="photo-date">April 15, 2026</p>
+                        <p class="photo-description">
+                            Experiencing the ancient art of shadow puppetry in Yogyakarta. The intricate stories, 
+                            traditional gamelan music, and skilled puppeteers bring centuries of culture to life.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Culture</span>
+                            <span class="tag">Traditional Art</span>
+                            <span class="tag">Yogyakarta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="travel" data-aos="fade-up" data-aos-delay="100">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">⛰️</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Mount Bromo, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Volcanic Sunrise Adventure</h3>
+                        <p class="photo-date">April 10, 2026</p>
+                        <p class="photo-description">
+                            The challenging hike to Mount Bromo's viewpoint rewarded us with one of nature's most 
+                            spectacular shows. The sunrise over the volcanic landscape is absolutely mesmerizing.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Adventure</span>
+                            <span class="tag">Volcano</span>
+                            <span class="tag">Hiking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🍣</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Tokyo, Japan</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Omakase Sushi Experience</h3>
+                        <p class="photo-date">April 5, 2026</p>
+                        <p class="photo-description">
+                            An unforgettable omakase experience at a small sushi bar in Tokyo. Each piece crafted 
+                            with precision, showcasing the freshest fish and the chef's incredible skill.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Japanese Food</span>
+                            <span class="tag">Sushi</span>
+                            <span class="tag">Tokyo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="travel" data-aos="fade-up">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🏖️</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Raja Ampat, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Paradise Islands of Raja Ampat</h3>
+                        <p class="photo-date">March 28, 2026</p>
+                        <p class="photo-description">
+                            Crystal clear waters, pristine beaches, and incredible marine biodiversity. Raja Ampat 
+                            is truly one of the most beautiful places on Earth and a diver's paradise.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Beach</span>
+                            <span class="tag">Diving</span>
+                            <span class="tag">Paradise</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="culture" data-aos="fade-up" data-aos-delay="100">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🏛️</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Borobudur, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Ancient Buddhist Temple</h3>
+                        <p class="photo-date">March 22, 2026</p>
+                        <p class="photo-description">
+                            Exploring the magnificent Borobudur temple at sunrise. This 9th-century Buddhist temple 
+                            is a UNESCO World Heritage site and an architectural masterpiece.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">History</span>
+                            <span class="tag">Temple</span>
+                            <span class="tag">UNESCO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                    <div class="photo-image-placeholder">
+                        <span class="photo-icon">🥘</span>
+                    </div>
+                    <div class="photo-overlay">
+                        <span class="photo-location">📍 Padang, Indonesia</span>
+                    </div>
+                    <div class="photo-content">
+                        <h3>Authentic Padang Cuisine</h3>
+                        <p class="photo-date">March 15, 2026</p>
+                        <p class="photo-description">
+                            The famous Padang-style dining experience with dozens of dishes served at once. 
+                            Rich, spicy, and incredibly flavorful - this is Indonesian cuisine at its finest.
+                        </p>
+                        <div class="photo-tags">
+                            <span class="tag">Indonesian Food</span>
+                            <span class="tag">Spicy</span>
+                            <span class="tag">Traditional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">My Journey in Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Countries Visited</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">🍜</div>
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Dishes Tried</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">📸</div>
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Photos Taken</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">✈️</div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Flights Boarded</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bapak at the South</h3>
+                    <p>Exploring technology, food, travel, and life's adventures.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="food-travel.html">Food & Travel</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bapak at the South. All rights reserved.</p>
+                <p>Powered by passion and creativity</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-image-placeholder">
+                <span class="lightbox-icon">🖼️</span>
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title">Photo Title</h3>
+                <p id="lightbox-description">Photo description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <style>
+        /* Additional styles for Food & Travel page */
+        .travel-header {
+            background: linear-gradient(135deg, #FFB347 0%, #E74C3C 100%);
+        }
+        
+        .filter-section {
+            background: var(--white);
+            padding: 2rem 0;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 70px;
+            z-index: 100;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .filter-tab {
+            padding: 0.75rem 1.5rem;
+            background: var(--light-gray);
+            border: none;
+            border-radius: var(--radius-md);
+            font-family: var(--font-primary);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+        
+        .filter-tab:hover {
+            background: var(--medium-gray);
+        }
+        
+        .filter-tab.active {
+            background: var(--gradient-primary);
+            color: var(--white);
+        }
+        
+        .gallery-section {
+            padding: 4rem 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .photo-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+            cursor: pointer;
+        }
+        
+        .photo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .photo-image-placeholder {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background: var(--gradient-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .photo-icon {
+            font-size: 5rem;
+        }
+        
+        .photo-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+        }
+        
+        .photo-location {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .photo-content {
+            padding: 1.5rem;
+        }
+        
+        .photo-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-gray);
+        }
+        
+        .photo-date {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .photo-description {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .stats-section {
+            background: var(--light-gray);
+            padding: 4rem 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .stat-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 3rem;
+            color: var(--white);
+            cursor: pointer;
+            z-index: 10001;
+        }
+        
+        .lightbox-content {
+            max-width: 900px;
+            width: 90%;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+        
+        .lightbox-image-placeholder {
+            width: 100%;
+            height: 500px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lightbox-icon {
+            font-size: 8rem;
+        }
+        
+        .lightbox-info {
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-tabs {
+                gap: 0.5rem;
+            }
+            
+            .filter-tab {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .lightbox-image-placeholder {
+                height: 300px;
+            }
+        }
+    </style>
+    
+    <script>
+        // Filter functionality
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const photoCards = document.querySelectorAll('.photo-card');
+        
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                filterTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                
+                // Filter photos
+                photoCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Lightbox functionality (basic version)
+        const lightbox = document.getElementById('lightbox');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        
+        photoCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h3').textContent;
+                const description = this.querySelector('.photo-description').textContent;
+                
+                document.getElementById('lightbox-title').textContent = title;
+                document.getElementById('lightbox-description').textContent = description;
+                
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>
