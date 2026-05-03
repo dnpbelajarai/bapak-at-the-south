@@ -172,7 +172,7 @@ function initNavbarScroll() {
 }
 
 // ============================================
-// NEWSLETTER FORM
+// NEWSLETTER FORM - mailto: VERSION
 // ============================================
 function initNewsletterForm() {
     const form = document.getElementById('newsletterForm');
@@ -182,36 +182,30 @@ function initNewsletterForm() {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const emailInput = this.querySelector('input[type="email"]');
+        const emailInput = document.getElementById('subscriberEmail');
         const email = emailInput.value;
         
         // Basic email validation
         if (!isValidEmail(email)) {
-            showNotification('Please enter a valid email address', 'error');
+            alert('Please enter a valid email address');
             return;
         }
         
-        // Show loading state
-        const submitButton = this.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        submitButton.textContent = 'Subscribing...';
-        submitButton.disabled = true;
+        // Create mailto link with subscriber's email in the body
+        const yourEmail = 'dnpbelajarai@outlook.com'; // GANTI DENGAN EMAIL ANDA!
+        const subject = 'New Articles Notification Request';
+        const body = `Hello,%0D%0A%0D%0AI would like to get notified with new articles published on your website.%0D%0A%0D%0AMy email: ${email}%0D%0A%0D%0AThank you!`;
         
-        // Simulate API call (replace with actual newsletter service)
+        const mailtoLink = `mailto:${yourEmail}?subject=${encodeURIComponent(subject)}&body=${body}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Reset form after a short delay
         setTimeout(() => {
-            // Success
-            showNotification('Thank you for subscribing! 🎉', 'success');
             emailInput.value = '';
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-            
-            // In production, you would send this to your newsletter service:
-            // fetch('/api/newsletter', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify({ email: email })
-            // })
-        }, 1500);
+            alert('Email client opened! Please send the email to subscribe.');
+        }, 500);
     });
 }
 
