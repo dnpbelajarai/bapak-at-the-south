@@ -31,7 +31,7 @@ class AITransformationGame {
         // Items
         this.items = [];
         this.itemSpawnTimer = 0;
-        this.itemSpawnInterval = 400; // milliseconds
+        this.itemSpawnInterval = 300; // milliseconds
         
         // Item definitions with emojis, names, and scores
         this.chaosItems = [
@@ -42,10 +42,10 @@ class AITransformationGame {
         ];
         
         this.winItems = [
-            { emoji: '📁', name: 'Clean Dataset', score: 20, color: '#51CF66' },
-            { emoji: '👨‍💼', name: 'AI Talent', score: 10, color: '#69DB7C' },
-            { emoji: '💼', name: 'Executive Buy-In', score: 40, color: '#8CE99A' },
-            { emoji: '🖥️', name: 'GPU Cluster', score: 30, color: '#51CF66' }
+            { emoji: '📁', name: 'Clean Dataset', score: 10, color: '#51CF66' },
+            { emoji: '👨‍💼', name: 'AI Talent', score: 5, color: '#69DB7C' },
+            { emoji: '💼', name: 'Executive Buy-In', score: 5, color: '#8CE99A' },
+            { emoji: '🖥️', name: 'GPU Cluster', score: 10, color: '#51CF66' }
         ];
         
         // City buildings for background
