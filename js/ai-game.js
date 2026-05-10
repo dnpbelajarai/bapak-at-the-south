@@ -31,7 +31,7 @@ class AITransformationGame {
         // Items
         this.items = [];
         this.itemSpawnTimer = 0;
-        this.itemSpawnInterval = 300; // milliseconds
+        this.itemSpawnInterval = 250; // milliseconds
         
         // Item definitions with emojis, names, and scores
         this.chaosItems = [
@@ -567,16 +567,16 @@ class AITransformationGame {
             rating = 'AI MASTER';
             ratingColor = '#FFD700';
         } else if (this.score >= 150) {
-            rating = 'CERTIFIED AI';
+            rating = 'ADVANCE LEARNER';
             ratingColor = '#51CF66';
         } else if (this.score >= 100) {
-            rating = 'PRE CERTIFICATION';
+            rating = 'AI LEARNER';
             ratingColor = '#69DB7C';
         } else if (this.score >= 50) {
-            rating = 'LEARNING AI';
+            rating = 'TRIAL';
             ratingColor = '#FFA07A';
         } else {
-            rating = 'LEARN MORE';
+            rating = 'LEARNING';
             ratingColor = '#FF6B6B';
         }
         
