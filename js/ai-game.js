@@ -31,7 +31,7 @@ class AITransformationGame {
         // Items
         this.items = [];
         this.itemSpawnTimer = 0;
-        this.itemSpawnInterval = 600; // milliseconds
+        this.itemSpawnInterval = 400; // milliseconds
         
         // Item definitions with emojis, names, and scores
         this.chaosItems = [
