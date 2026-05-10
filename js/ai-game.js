@@ -31,21 +31,21 @@ class AITransformationGame {
         // Items
         this.items = [];
         this.itemSpawnTimer = 0;
-        this.itemSpawnInterval = 1500; // milliseconds
+        this.itemSpawnInterval = 600; // milliseconds
         
         // Item definitions with emojis, names, and scores
         this.chaosItems = [
-            { emoji: '📋', name: 'Compliance Issue', score: -15, color: '#FF6B6B' },
-            { emoji: '📊', name: 'Scope Creep', score: -20, color: '#FF8787' },
-            { emoji: '🤖', name: 'Hallucination', score: -25, color: '#FFA07A' },
-            { emoji: '✂️', name: 'Budget Cut', score: -30, color: '#FF4444' }
+            { emoji: '📋', name: 'Compliance Issue', score: -100, color: '#FF6B6B' },
+            { emoji: '😩', name: 'Scope Creep', score: -30, color: '#FF8787' },
+            { emoji: '🤖', name: 'Hallucination', score: -40, color: '#FFA07A' },
+            { emoji: '✂️', name: 'Budget Cut', score: -50, color: '#FF4444' }
         ];
         
         this.winItems = [
             { emoji: '📁', name: 'Clean Dataset', score: 20, color: '#51CF66' },
-            { emoji: '👨‍💼', name: 'AI Talent', score: 25, color: '#69DB7C' },
-            { emoji: '💼', name: 'Executive Buy-In', score: 30, color: '#8CE99A' },
-            { emoji: '🖥️', name: 'GPU Cluster', score: 35, color: '#51CF66' }
+            { emoji: '👨‍💼', name: 'AI Talent', score: 10, color: '#69DB7C' },
+            { emoji: '💼', name: 'Executive Buy-In', score: 40, color: '#8CE99A' },
+            { emoji: '🖥️', name: 'GPU Cluster', score: 30, color: '#51CF66' }
         ];
         
         // City buildings for background
