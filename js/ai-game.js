@@ -493,9 +493,9 @@ class AITransformationGame {
         this.ctx.fillStyle = '#FFD700';
         this.ctx.textAlign = 'right';
         const maturity = this.score >= 200 ? 'AI MASTER' : 
-                        this.score >= 150 ? 'AI EXPERT' :
-                        this.score >= 100 ? 'AI PRACTITIONER' :
-                        this.score >= 50 ? 'AI ENTHUSIAST' : 'AI MATURITY';
+                        this.score >= 150 ? 'ADVANCE LEARNER' :
+                        this.score >= 100 ? 'TRIAL' :
+                        this.score >= 50 ? 'LEARNING' : 'STARTING';
         this.ctx.fillText(maturity, this.canvas.width - 20, 40);
     }
     
@@ -570,13 +570,13 @@ class AITransformationGame {
             rating = 'ADVANCE LEARNER';
             ratingColor = '#51CF66';
         } else if (this.score >= 100) {
-            rating = 'AI LEARNER';
+            rating = 'TRIAL';
             ratingColor = '#69DB7C';
         } else if (this.score >= 50) {
-            rating = 'TRIAL';
+            rating = 'LEARNING';
             ratingColor = '#FFA07A';
         } else {
-            rating = 'LEARNING';
+            rating = 'STARTING';
             ratingColor = '#FF6B6B';
         }
         
