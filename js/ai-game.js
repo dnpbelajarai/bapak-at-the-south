@@ -567,16 +567,16 @@ class AITransformationGame {
             rating = 'AI MASTER';
             ratingColor = '#FFD700';
         } else if (this.score >= 150) {
-            rating = 'AI EXPERT';
+            rating = 'CERTIFIED AI';
             ratingColor = '#51CF66';
         } else if (this.score >= 100) {
-            rating = 'AI PRACTITIONER';
+            rating = 'PRE CERTIFICATION';
             ratingColor = '#69DB7C';
         } else if (this.score >= 50) {
-            rating = 'AI ENTHUSIAST';
+            rating = 'LEARNING AI';
             ratingColor = '#FFA07A';
         } else {
-            rating = 'AI NOVICE';
+            rating = 'LEARN MORE';
             ratingColor = '#FF6B6B';
         }
         
@@ -585,7 +585,7 @@ class AITransformationGame {
         this.ctx.fillText(rating, this.canvas.width / 2, 280);
         
         // Draw pass/fail message
-        if (this.score >= 100) {
+        if (this.score >= 200) {
             this.ctx.fillStyle = '#51CF66';
             this.ctx.font = '20px "Press Start 2P", monospace';
             this.ctx.fillText('YOU SURVIVED!', this.canvas.width / 2, 340);
